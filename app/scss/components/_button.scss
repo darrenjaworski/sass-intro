@@ -3,6 +3,7 @@
 
 @import "../partials/mixins";
 
+// nesting
 .btn {
   padding: $padding;
   text-decoration: none;
@@ -11,6 +12,7 @@
   border: 1px solid white;
   display: inline-block;
   @include transition(background, 1s);
+  // & :hover
   &:hover {
     background: $blue;
     color: white;
