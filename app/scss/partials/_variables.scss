@@ -1,0 +1,10 @@
+$padding: 8px;
+$font_size: 16px;
+$font_stack: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$font_weight: 400;
+
+$transition_timing: 0.5s;
+$transition: all $transition_timing;
+
+$breakpoint_px: 800px;
+$breakpoint: "max-width: " + $breakpoint_px;

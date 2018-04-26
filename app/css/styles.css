@@ -1,0 +1,123 @@
+.row:before, .row:after {
+  content: "";
+  display: table; }
+
+.row:after {
+  clear: both; }
+
+.half {
+  width: 50%;
+  float: left; }
+  @media (max-width: 800px) {
+    .half {
+      width: 100%; } }
+
+.right {
+  float: right; }
+
+h1 {
+  font-size: 2rem;
+  margin: 2rem 0; }
+
+h2 {
+  font-size: 1.5rem;
+  margin: 1.25rem 0; }
+
+h3 {
+  font-size: 1.2rem;
+  margin: 1rem 0; }
+
+h4 {
+  font-size: 1.1rem;
+  margin: 0.9rem 0; }
+
+h5 {
+  font-size: 1rem;
+  margin: 0.8rem 0; }
+
+h6 {
+  font-size: 0.9rem;
+  margin: 0.75rem 0; }
+
+h7 {
+  font-size: 0.75rem;
+  margin: 0.7rem 0; }
+
+.btn {
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+  border-radius: 4px;
+  border: 1px solid white;
+  display: inline-block;
+  transition: background 1s; }
+  .btn:hover {
+    background: #4286f4;
+    color: white; }
+  .btn--primary {
+    background: #4286f4;
+    color: white;
+    border: 1px solid #4286f4; }
+    .btn--primary:hover {
+      background: white;
+      color: #4286f4; }
+  .btn--secondary {
+    background: #fc7676;
+    border: 1px solid #fc7676; }
+    .btn--secondary:hover {
+      background: white;
+      color: #fc7676; }
+
+.main-nav {
+  background: #cccccc; }
+  .main-nav__ul {
+    padding: 16px;
+    margin: 0;
+    margin-bottom: 2rem; }
+  .main-nav__li {
+    list-style: none;
+    display: inline-block; }
+    .main-nav__li--special {
+      color: #fc7676; }
+    .main-nav__li + li {
+      margin-left: 8px; }
+    .main-nav__li.active {
+      border-bottom: 2px solid #4286f4; }
+
+.card {
+  margin: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-shadow: 4px 4px 5px #cccccc; }
+  .card:before, .card:after {
+    content: "";
+    display: table; }
+  .card:after {
+    clear: both; }
+  .card__image {
+    height: 500px;
+    border-bottom: 1px solid #cccccc;
+    background-position: center center;
+    background-size: cover; }
+    .card__image--bill {
+      background-image: url(https://www.fillmurray.com/500/500); }
+    .card__image--cat {
+      background-image: url(https://placekitten.com/500/500); }
+  .card__actions {
+    text-align: right;
+    margin-top: .5rem;
+    margin: 8px; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400; }
+
+body {
+  margin: 0; }
+
+main {
+  padding: 16px; }

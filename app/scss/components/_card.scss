@@ -1,0 +1,35 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+
+// dictionary
+$bg_images: (
+  "bill": url(https://www.fillmurray.com/500/500),
+  "cat": url(https://placekitten.com/500/500)
+);
+
+.card {
+  @include clearfix;
+  margin: $padding * 2;
+  border: 1px solid $darkGray;
+  border-radius: 4px;
+  box-shadow: 4px 4px 5px $darkGray;
+  @include e("image") {
+    height: 500px;
+    border-bottom: 1px solid $darkGray;
+    background: {
+      position: center center;
+      size: cover;
+    }
+    @include m("bill") {
+      background-image: map-get($bg_images, "bill");
+    }
+    @include m("cat") {
+      background-image: map-get($bg_images, "cat");
+    }
+  }
+  @include e('actions') {
+    text-align: right;
+    margin-top: .5rem;
+    margin: $padding;
+  }
+}

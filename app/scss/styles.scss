@@ -1,0 +1,31 @@
+@import "partials/variables";
+@import "partials/colors";
+@import "partials/mixins";
+
+@import "partials/layout";
+@import "partials/typography";
+
+@import "components/button";
+@import "components/nav";
+@import "components/card";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  //nested properties
+  font: {
+    family: $font_stack;
+    size: $font_size;
+    weight: $font_weight;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  padding: $padding * 2;
+}

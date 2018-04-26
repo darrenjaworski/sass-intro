@@ -1,0 +1,35 @@
+@import "../partials/variables";
+@import "../partials/colors";
+
+@import "../partials/mixins";
+
+.btn {
+  padding: $padding;
+  text-decoration: none;
+  color: black;
+  border-radius: 4px;
+  border: 1px solid white;
+  display: inline-block;
+  @include transition(background, 1s);
+  &:hover {
+    background: $blue;
+    color: white;
+  }
+  @include m("primary") {
+    background: $blue;
+    color: white;
+    border: 1px solid $blue;
+    &:hover {
+      background: white;
+      color: $blue;
+    }
+  }
+  @include m("secondary") {
+    background: $red;
+    border: 1px solid $red;
+    &:hover {
+      background: white;
+      color: $red;
+    }
+  }
+}

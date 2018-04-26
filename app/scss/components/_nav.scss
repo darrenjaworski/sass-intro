@@ -1,0 +1,26 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+
+.main-nav {
+  background: $darkGray;
+  @include e("ul") {
+    padding: $padding * 2;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  @include e("li") {
+    list-style: none;
+    display: inline-block;
+    @include m("special") {
+      color: $red;
+    }
+    // nest adjacent selector
+    + li {
+      margin-left: $padding;
+    }
+    // & to add .class, hover, focus etc
+    &.active {
+      border-bottom: 2px solid $blue;
+    }
+  }
+}

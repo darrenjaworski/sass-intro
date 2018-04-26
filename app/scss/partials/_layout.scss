@@ -1,0 +1,17 @@
+@import "../partials/variables";
+
+.row {
+  @include clearfix;
+}
+
+.half {
+  width: 50%;
+  float: left;
+  @media ($breakpoint) {
+    width: 100%;
+  }
+}
+
+.right {
+  float: right;
+}

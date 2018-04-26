@@ -1,0 +1,19 @@
+// dictionary within a dictionary
+$header_sizes: (
+  h1: (font-size: 2rem, margin: 2rem 0),
+  h2: (font-size: 1.5rem, margin: 1.25rem 0),
+  h3: (font-size: 1.2rem, margin: 1rem 0),
+  h4: (font-size: 1.1rem, margin: 0.9rem 0),
+  h5: (font-size: 1rem, margin: 0.8rem 0),
+  h6: (font-size: 0.9rem, margin: 0.75rem 0),
+  h7: (font-size: 0.75rem, margin: 0.7rem 0)
+);
+
+// looping!
+@each $header, $properties in $header_sizes {
+  #{$header} {
+    @each $property, $value in $properties {
+      #{$property}: $value;
+    }
+  }
+}
