@@ -9,9 +9,7 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "npm": "^6.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.23.7",
     "gulp": "^3.9.1",
