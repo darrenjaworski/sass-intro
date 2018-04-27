@@ -43,6 +43,22 @@ h7 {
   font-size: 0.75rem;
   margin: 0.7rem 0; }
 
+.main-nav {
+  background: #cccccc; }
+  .main-nav__ul {
+    padding: 16px;
+    margin: 0;
+    margin-bottom: 2rem; }
+  .main-nav__li {
+    list-style: none;
+    display: inline-block; }
+    .main-nav__li--special {
+      color: #fc7676; }
+    .main-nav__li + li {
+      margin-left: 8px; }
+    .main-nav__li.active {
+      border-bottom: 2px solid #4286f4; }
+
 .btn {
   padding: 8px;
   text-decoration: none;
@@ -67,22 +83,6 @@ h7 {
     .btn--secondary:hover {
       background: white;
       color: #fc7676; }
-
-.main-nav {
-  background: #cccccc; }
-  .main-nav__ul {
-    padding: 16px;
-    margin: 0;
-    margin-bottom: 2rem; }
-  .main-nav__li {
-    list-style: none;
-    display: inline-block; }
-    .main-nav__li--special {
-      color: #fc7676; }
-    .main-nav__li + li {
-      margin-left: 8px; }
-    .main-nav__li.active {
-      border-bottom: 2px solid #4286f4; }
 
 .card {
   margin: 16px;

@@ -11,6 +11,12 @@
   }
 }
 
+@mixin accessible_hidden {
+  position: absolute;
+  left: -999em;
+  top: 0;
+}
+
 // function defaults
 @mixin transition($property: all, $timing: $transition_timing) {
   transition: $property $timing;
